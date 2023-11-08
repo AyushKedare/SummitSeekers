@@ -19,7 +19,7 @@ export default function App() {
   const [user,setUser] = useState(null)
   useEffect(()=>{
     if(!user){
-      axios.get("http://localhost:5000/api/users/profile",{withCredentials:true}) 
+      axios.get("https://summit-seekers-backend.vercel.app/api/users/profile",{withCredentials:true}) 
       .then(({data})=>{
         setUser(data)
       })

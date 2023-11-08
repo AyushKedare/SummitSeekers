@@ -13,7 +13,7 @@ function Navbar(){
     }
     const handleLogout = (e)=>{
         e.preventDefault()
-        axios.post("http://localhost:5000/api/users/logout",{},{withCredentials:true})
+        axios.post("https://summit-seekers-backend.vercel.app/api/users/logout",{},{withCredentials:true})
         .then(({data})=>setUser(null))
         .catch(err=>console.error(err)) 
     }

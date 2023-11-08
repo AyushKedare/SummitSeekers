@@ -32,7 +32,7 @@ const LoginScreen = () => {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-		const {data} = await axios.post("http://localhost:5000/api/users/auth",{email,password},{withCredentials:true})
+		const {data} = await axios.post("https://summit-seekers-backend.vercel.app/api/users/auth",{email,password},{withCredentials:true})
 		console.log(data)
 		setUser(data)
       navigate('/');
