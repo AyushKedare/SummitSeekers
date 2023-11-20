@@ -30,7 +30,7 @@ const RegisterScreen = () => {
     } else {
       try {
         setIsLoading(true)
-        const {data} = await axios.post("https://summit-seekers-backend.vercel.app/api/users",{name,email,password},{withCredentials:true})
+        const {data} = await axios.post("http://localhost:5000/api/users",{name,email,password},{withCredentials:true})
         setUser(data)
         setIsLoading(false)
         navigate("/")
