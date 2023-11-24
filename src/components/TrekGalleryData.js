@@ -11,4 +11,4 @@ function TrekGalleryData(props){
     )
 }
 
-export default TrekGalleryData;
+export default TrekGalleryData; 

@@ -18,4 +18,4 @@ function TrekData(props){
     )
 }
 
-export default TrekData;
+export default TrekData; 

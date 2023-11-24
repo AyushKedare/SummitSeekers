@@ -12,8 +12,8 @@ function RentData(props){
             <button><a href="/payment">Buy</a></button>
             
 
-        </div>
+        </div> 
     )
 }
 
-export default RentData;
+export default RentData; 
